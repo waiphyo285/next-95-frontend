@@ -1,5 +1,7 @@
-import { apiUrl } from 'config';
+// import { apiUrl } from 'config';
 import { fetchWrapper } from 'helpers';
+
+const apiUrl = "http://127.0.0.1:8000/api";
 
 export const userService = {
     getAll,
@@ -9,7 +11,7 @@ export const userService = {
     delete: _delete
 };
 
-const baseUrl = `${apiUrl}/users`;
+const baseUrl = `${apiUrl}/customers`;
 
 function getAll() {
     return fetchWrapper.get(baseUrl);

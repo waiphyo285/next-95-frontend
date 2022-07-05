@@ -1,5 +1,4 @@
 const fs = require('fs');
-
 let users = require('data/users.json');
 
 export const usersRepo = {
@@ -18,8 +17,8 @@ function getById(id) {
     return users.find(x => x.id.toString() === id.toString());
 }
 
-function create({ title, firstName, lastName, email, role, password }) {
-    const user = { title, firstName, lastName, email, role, password };
+function create({ name, email, description }) {
+    const user = { name, email, description };
 
     // validate
     if (users.find(x => x.email === user.email))
@@ -37,18 +36,14 @@ function create({ title, firstName, lastName, email, role, password }) {
     saveData();
 }
 
-function update(id, { title, firstName, lastName, email, role, password }) {
-    const params = { title, firstName, lastName, email, role, password };
+function update(id, { name, email, description }) {
+    const params = { name, email, description };
+
     const user = users.find(x => x.id.toString() === id.toString());
 
     // validate
     if (params.email !== user.email && users.find(x => x.email === params.email))
         throw `User with the email ${params.email} already exists`;
-
-    // only update password if entered
-    if (!params.password) {
-        delete params.password;
-    }
 
     // set date updated
     user.dateUpdated = new Date().toISOString();
@@ -63,7 +58,6 @@ function _delete(id) {
     // filter out deleted user and save
     users = users.filter(x => x.id.toString() !== id.toString());
     saveData();
-    
 }
 
 // private helper functions

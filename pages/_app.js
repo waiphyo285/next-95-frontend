@@ -24,14 +24,14 @@ function App({ Component, pageProps }) {
             </div>
 
             {/* credits */}
-            <div className="text-center mt-4">
+            {/* <div className="text-center mt-4">
                 <p>
                     <a href="https://jasonwatmore.com/post/2021/04/20/next-js-10-crud-example-with-react-hook-form" target="_top">Next.js 10 - CRUD Example with React Hook Form</a>
                 </p>
                 <p>
                     <a href="https://jasonwatmore.com" target="_top">JasonWatmore.com</a>
                 </p>
-            </div>
+            </div> */}
         </>
     );
 }

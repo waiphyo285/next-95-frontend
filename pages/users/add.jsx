@@ -1,3 +1,3 @@
-import { AddEdit } from 'components/users';
+import { AddEdit, NewForm } from 'components/users';
 
-export default AddEdit;
+export default NewForm;

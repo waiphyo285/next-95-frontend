@@ -1,24 +1,26 @@
 [
     {
-        "title": "Mr",
-        "firstName": "Frank",
-        "lastName": "Murphy",
-        "email": "frank.murphy@rustvale.com",
-        "role": "User",
-        "password": "sue123",
+        "name": "Hello World",
+        "email": "waiphyo.dev@gmail.com",
+        "description": "Myanmar",
         "id": 1,
-        "dateCreated": "2021-04-08T05:33:05.184Z",
-        "dateUpdated": "2021-04-08T05:33:05.184Z"
+        "dateCreated": "2022-07-05T16:28:24.978Z",
+        "dateUpdated": "2022-07-05T16:55:42.443Z"
     },
     {
-        "title": "Mr",
-        "firstName": "wai",
-        "lastName": "naing",
-        "email": "waiphyo.dev@gmail.com",
-        "role": "User",
-        "password": "DuAEVYFj5r452",
+        "name": "Sun Myanmar",
+        "email": "sample@mail.com",
+        "description": "Myanmar",
         "id": 2,
-        "dateCreated": "2022-07-05T14:19:23.959Z",
-        "dateUpdated": "2022-07-05T14:19:23.962Z"
+        "dateCreated": "2022-07-05T16:38:21.350Z",
+        "dateUpdated": "2022-07-05T16:50:58.709Z"
+    },
+    {
+        "name": "Super Man",
+        "email": "zarchi@gmail.com",
+        "description": "Myanmar",
+        "id": 3,
+        "dateCreated": "2022-07-05T16:53:55.566Z",
+        "dateUpdated": "2022-07-05T16:53:55.566Z"
     }
 ]

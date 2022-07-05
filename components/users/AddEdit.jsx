@@ -14,7 +14,7 @@ function AddEdit(props) {
     const isAddMode = !user;
     const router = useRouter();
     const [showPassword, setShowPassword] = useState(false);
-    
+
     // form validation rules 
     const validationSchema = Yup.object().shape({
         title: Yup.string()
@@ -77,7 +77,10 @@ function AddEdit(props) {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <h1>{isAddMode ? 'Add User' : 'Edit User'}</h1>
+            <h3 className='text-center'>{isAddMode ? 'Add Customer' : 'Edit Customer'}</h3>
+
+            <hr />
+
             <div className="form-row">
                 <div className="form-group col">
                     <label>Title</label>

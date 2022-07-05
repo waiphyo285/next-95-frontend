@@ -1,7 +1,7 @@
-import { AddEdit } from 'components/users';
+import { AddEdit, NewForm } from 'components/users';
 import { userService } from 'services';
 
-export default AddEdit;
+export default NewForm;
 
 export async function getServerSideProps({ params }) {
     const user = await userService.getById(params.id);
